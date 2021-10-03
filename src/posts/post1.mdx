@@ -1,0 +1,88 @@
+---
+title: abc
+image: ../images/image-3.jpg
+x: xxx111
+---
+
+<!--
+```html
+<button class="btn-prev">Previous</button>
+<button class="btn-next">Next</button>
+``` -->
+
+```js {1,3-5}
+const images = document.querySelectorAll(".container img")
+const prevBtn = document.querySelector(".btn-prev")
+const nextBtn = document.querySelector(".btn-next")
+
+let index = 0
+images[index].classList.add("active")
+
+function prevImg() {
+  images[index].classList.remove("active")
+  index -= 1
+  images[index].classList.add("active")
+}
+
+function nextImg() {
+  images[index].classList.remove("active")
+  index += 1
+  images[index].classList.add("active")
+}
+
+prevBtn.addEventListener("click", prevImg)
+nextBtn.addEventListener("click", nextImg)
+```
+
+<!--
+```json
+{
+  "name": 100,
+  "sds": "dssdjk"
+}
+```
+
+```graphql
+query MyQuery($slug: String) {
+  mdx(slug: { eq: $slug }) {
+    body
+    slug
+    frontmatter {
+      title
+      image {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  }
+}
+```
+
+```scss
+$breakPoints: (
+  "sm": 500px,
+  "md": 800px,
+  "lg": 992px,
+);
+
+@mixin flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  color: red;
+  $__content {
+    font-size: 20px;
+    padding: 20px;
+    margin: auto 4rem;
+  }
+
+  $:hover {
+    background: red;
+  }
+
+  @include flex;
+}
+``` -->

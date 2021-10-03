@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-example-1-mdx",
+    "path": "/example1/",
+    "result": {"pageContext":{"frontmatter":{"title":"abc","image":"../images/image-3.jpg"}}},
+    "staticQueryHashes": []}

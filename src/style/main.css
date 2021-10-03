@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Ubuntu&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.blockqoute {
+  border: 1px solid #c29e31;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  background-color: #ffda6a;
+  margin: 1rem 0;
+}
+
+.blockqoute:hover {
+  background-color: hsl(45, 100%, 61%);
+}
+
+.blockqoute p {
+  text-transform: capitalize;
+  color: black !important;
+}
+
+pre {
+  margin: 2rem 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Ubuntu", sans-serif; */
+  /* font-family: "Courier Prime", monospace; */
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  line-height: 1.7;
+  font-size: 17px;
+  overflow: hidden;
+}
+
+/* Styleld components example with line numbers START*/
+
+.wrapper {
+  text-align: center;
+}
+
+.pre {
+  text-align: left;
+  margin: 1em 0;
+  padding: 0.5em;
+  overflow: scroll;
+}
+
+.pre .token-line {
+  line-height: 1.3em;
+  height: 1.3em;
+}
+
+.line {
+  display: table-row;
+}
+
+.lineNo {
+  display: table-cell;
+  text-align: right;
+  padding-right: 1em;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.lineContent {
+  display: table-cell;
+}
+
+/* Styleld components example with line numbers END*/
+
+/* Code highlight styles Start  */
+.prism-code {
+  background-color: #1f2937 !important;
+}
+
+.highlight-line {
+  background-color: #2c3f5aad !important;
+}
+
+/* Css Start */
+.selector {
+  color: #f92672 !important;
+}
+
+.selector.class {
+  color: #a6e22e !important;
+}
+
+.property {
+  color: #66d9ef !important;
+}
+
+.number {
+  color: #ae81ff !important;
+}
+
+.unit {
+  color: #ae81ff !important;
+}
+
+.plain {
+  color: #fff !important;
+}
+
+.function {
+  color: #e6db74 !important;
+}
+
+.operator {
+  color: #e6db74 !important;
+}
+
+.string {
+  color: #e6db74 !important;
+}
+
+.punctuation {
+  color: #fff !important;
+}
+/* Css End */
+
+/* Code highlight styles End */
